@@ -24,11 +24,70 @@
 
 /* -------- Header End------------ */
 
+
+/* -------- Nav Start------------ */
+
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navi {
+    gap: 1rem;
+    justify-content: center;
+
+}
+.navbar-brand{
+    padding: 0 12px;
+  background-color: #F4D03F;
+  border: 2px solid #F4D03F;
+  border-radius: 20px;
+}
+/* -------- Nav End------------ */
+
+
+
 /* -------- Content End------------ */
+.img-container{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tieu-de{
+    text-align: center;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.image-container img{
+    width: 40%;
+    padding: 0 30px;
+}
 /* -------- Content End------------ */
 
 
-/* -------- Footer End------------ */
+/* -------- Footer Start------------ */
+
+footer {
+    background-color: #16A085;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 /* -------- Footer End------------ */
 
 
@@ -45,5 +104,24 @@
         width: 100px;
     }
 }
+@media only screen and (max-width: 980px){
+    .img-logo{
+        padding: 10px 5px;
+        width: 150px;
+    }
+    .header__search{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .me-2{
+        width: 200px;
+    }
+    .img-logo{
+        width: 100px;
+    }
+}
+
 
 /* -------- Reponsivve End------------ */

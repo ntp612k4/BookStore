@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -------- Header Start------------ */
+.header{
+    height: 80px;
+    background-color: #16A085 ;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 40px;
+}
+.header a{
+    text-decoration: none;
+}
+.header__search {
+    height: 40px;
+
+}
+
+/* -------- Header End------------ */
+
+/* -------- Content End------------ */
+/* -------- Content End------------ */
+
+
+/* -------- Footer End------------ */
+/* -------- Footer End------------ */
+
+
+/* -------- Reponsive End------------ */
+@media only screen and (max-width: 1200px) {
+    .header__search{
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header__search{
+        padding: 10px 0;
+        width: 100px;
+    }
+}
+
+/* -------- Reponsivve End------------ */

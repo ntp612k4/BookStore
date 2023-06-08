@@ -11,6 +11,7 @@
     display: flex;
     position: relative;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
     padding: 10px 40px;
 }
@@ -18,9 +19,14 @@
     text-decoration: none;
 }
 .header__search {
-    height: 40px;
-
+    height: 50px;
+    padding: 0;
 }
+
+.header__user{
+    display: flex;
+}
+
 
 /* -------- Header End------------ */
 
@@ -44,6 +50,7 @@ nav #main-menu li a {
     display: flex;
     padding-left: 0;
     margin-bottom: 0;
+    position: relative;
 }
 nav #main-menu li:hover .subnav {
     display: block;
@@ -188,6 +195,9 @@ footer a:hover {
     .header__search{
         padding: 10px 0;
     }
+    .header{
+        padding: 0 10px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -196,7 +206,7 @@ footer a:hover {
         width: 100px;
     }
 }
-@media only screen and (max-width: 980px){
+@media only screen and (max-width: 1000px){
     .img-logo{
         padding: 10px 5px;
         width: 150px;
@@ -204,14 +214,44 @@ footer a:hover {
     .header__search{
         width: 300px;
     }
+    .header__user > span {
+        display: none;
+    }
+    .header__user{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-@media only screen and (max-width: 320px){
+@media screen and (max-width: 676px){
+    .subnav{
+        bottom: -60%;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 578px){
     .me-2{
         width: 200px;
     }
     .img-logo{
         width: 100px;
+    }
+    .header .icon {
+        width: 20%;
+    }
+    .header__user{
+       width: 20%;
+       font-size: 14px;
+    }
+    .header__search{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 438px){
+     .img-logo{
+       padding: auto 0;
     }
 }
 

@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sách văn học</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boostrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <!-- -----------HEADER------------>
+    <div class="header">
+      <div class="icon col-sm-3">
+        <img
+          src="../img/logo.png"
+          alt=""
+          width="250px"
+          height="auto"
+          class="img-logo"
+        />
+      </div>
+      <div class="header__search input-group w-50 col-sm-3">
+        <span
+          class="input-group-text border-0 background_color_second"
+          style="background-color: white"
+        >
+          <i class="fa fa-search"></i
+        ></span>
+        <input
+          type="text"
+          class="form-control border-0 background_color_second p-2"
+          placeholder="Tìm kiếm sản phẩm"
+        />
+        <span class="input-group-text background_color_second border-0"></span>
+      </div>
+      <div class="header__user ms-2">
+        <a
+          class="me-2 text-decoration-none text-white col-xs-12"
+          href="../LOGIN/index.html"
+        >
+          <i class="fa fa-user"></i>
+          <span class="ms-2">Đăng nhập</span>
+        </a>
+        <span class="text-white me-2">|</span>
+        <a
+          class="me-2 text-decoration-none text-white col-xs-12"
+          href="../CART/index.html"
+        >
+          <i class="fa fa-shopping-cart"></i>
+          <span class="ms-2">Giỏ hàng</span>
+        </a>
+      </div>
+    </div>
+
+    <!----------------Navigation---------------- -->
+      <div id="wrapper">
+        <div id="header">
+          <div class="toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          <nav>
+            <ul id="main-menu">
+              <li>
+                <a href="../index.html">Trang chủ</a>
+              </li>
+              <li>
+                <a href="">Giới thiệu</a>
+              </li>
+              <li>
+                <a href=""
+                  >Danh mục sản phẩm
+                  <i class="arrow-down fi fi-br-angle-small-down"></i>
+                </a>
+                <ul class="subnav">
+                  <li>
+                    <a href="./vanhoc.html">Sách văn học</a>
+                  </li>
+                  <li>
+                      <a href="./lichsu.html">Sách lịch sử</a>
+                    </li>
+                  <li>
+                    <a href="">Sách thiếu nhi </a>
+                  </li>
+                 
+                  <li>
+                    <a href="./ngoaingu.html">Sách ngoại ngữ</a>
+                  </li>
+                  <li>
+                    <a href="./kynangsong.html">Sách kĩ năng sống</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Khuyến mãi </a>
+              </li>
+              <li>
+                <a href="">Liên hệ - Hỏi đáp</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>    <!----------------Navigation---------------- -->
+
+
+   <!-- CONTENT START -->
+
+   <section class="content">
+    <section class="wrap my-4">
+      <section class="menu">
+          <i class="fa fa-home"></i> <a href="../index.html">Trang chủ</a><i class="fa fa-angle-right mx-2"></i>
+          <span>Danh mục sản phẩm</span><i class="fa fa-angle-right mx-2"></i><span style="color: #F4D03F;">Sách thiếu nhi</span>
+      </section>
+    <div class="content__main">
+      <div class="sidebar">
+        <div class="sidebar__category">
+          <h3>Danh Mục Sản Phẩm</h3>
+          <span>Văn học</span>
+          <ul>
+            <li><a href="">Tiểu thuyết</a></li>
+            <li><a href="">Truyện ngắn</a></li>
+            <li><a href="">Ngôn tình</a></li>
+          </ul>
+          <br>
+        </div>
+        <div class="sidebar__filter">
+          <span>GIÁ</span>
+          <ul>
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">0đ - 150.000đ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">150.000đ - 300.000đ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">300.000đ - 700.000đ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">700.000đ - Trở Lên</label>
+            </li>
+          </ul>
+        </div>
+        <hr style="margin: 0;">
+        <div class="sidebar__filter">
+          <span>NHÀ CUNG CẤP</span>
+          <ul>
+             <li>
+              <input type="checkbox" name="" id="">
+              <label for="">Đình Tị</label>
+            </li>
+             <li>
+              <input type="checkbox" name="" id="">
+              <label for="">Nhã Nam</label>
+            </li>
+             <li>
+              <input type="checkbox" name="" id="">
+              <label for="">Cty CP MTV Hà Nội</label>
+            </li>
+             <li>
+              <input type="checkbox" name="" id="">
+              <label for="">Bách Việt</label>
+            </li>
+             <li>
+              <input type="checkbox" name="" id="">
+              <label for="">Phúc Ming Books</label>
+            </li>
+             <li>
+              <input type="checkbox" name="" id="">
+              <label for="">NSB Trẻ</label>
+            </li>
+             <li>
+              <input type="checkbox" name="" id="">
+              <label for="">IPM</label>
+            </li>
+             <li>
+              <input type="checkbox" name="" id="">
+              <label for="">Huy Hoàng Bookstore</label>
+            </li>
+          </ul>
+          <button>Xem Thêm <i class="bi bi-chevron-down"></i></button>
+        </div>
+        <hr style="margin: 0;">
+        <div class="sidebar__filter">
+          <span>ĐỘ TUỔI</span>
+          <ul>
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">10+</label>
+            </li>
+          </ul>
+        </div>
+        <hr style="margin: 0;">
+
+        <div class="sidebar__filter">
+          <span>ngôn ngữ</span>
+          <ul>
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">Tiếng Việt</label>
+            </li>
+          </ul>
+        </div>
+        <hr style="margin: 0;">
+
+        <div class="sidebar__filter">
+          <ul>
+            <ul>
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">Bìa Mềm</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">Bìa Cứng</label>
+            </li>
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">Bìa Hộp</label>
+            </li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+      <div class="products-list">
+         <div class="row-items">
+          <div class="container-box">
+            <div class="container-img">
+              <img src="../img/nn1.gif" alt="" />
+            </div>
+            <h5>25 CHUYÊN ĐỀ NGỮ PHÁP TIẾNG ANH TRỌNG TÂM</h5>
+            <p><del>14,656,000 đ</del></p>
+            <h6>12,454,000 đ</h6>
+            <button href="" class="addToCart">Giỏ hàng</button>
+          </div>
+
+          <div class="container-box">
+            <div class="container-img">
+              <img src="../img/nn1.gif" alt="" />
+            </div>
+            <h5>25 CHUYÊN ĐỀ NGỮ PHÁP TIẾNG ANH TRỌNG TÂM</h5>
+            <p><del>14,656,000 đ</del></p>
+            <h6>12,454,000 đ</h6>
+            <button href="" class="addToCart">Giỏ hàng</button>
+          </div>
+
+          <div class="container-box">
+            <div class="container-img">
+              <img src="../img/nn1.gif" alt="" />
+            </div>
+            <h5>T25 CHUYÊN ĐIẾNG ANH TRỌNG TÂM</h5>
+            <p><del>14,656,000 đ</del></p>
+            <h6>12,454,000 đ</h6>
+            <button href="" class="addToCart">Giỏ hàng</button>
+          </div>
+
+          <div class="container-box">
+            <div class="container-img">
+              <img src="../img/nn1.gif" alt="" />
+            </div>
+            <h5>Tên sách</h5>
+            <p><del>14,656,000 đ</del></p>
+            <h6>12,454,000 đ</h6>
+            <button href="" class="addToCart">Giỏ hàng</button>
+          </div>
+
+          <div class="container-box">
+            <div class="container-img">
+              <img src="../img/nn1.gif" alt="" />
+            </div>
+            <h5>Tên sách</h5>
+            <p><del>14,656,000 đ</del></p>
+            <h6>12,454,000 đ</h6>
+            <button href="" class="addToCart">Giỏ hàng</button>
+          </div>
+
+          <div class="container-box">
+            <div class="container-img">
+              <img src="../img/nn1.gif" alt="" />
+            </div>
+            <h5>Tên sách</h5>
+            <p><del>14,656,000 đ</del></p>
+            <h6>12,454,000 đ</h6>
+            <button href="" class="addToCart">Giỏ hàng</button>
+          </div>
+
+          <div class="container-box">
+            <div class="container-img">
+              <img src="../img/nn1.gif" alt="" />
+            </div>
+            <h5>Tên sách</h5>
+            <p><del>14,656,000 đ</del></p>
+            <h6>12,454,000 đ</h6>
+            <button href="" class="addToCart">Giỏ hàng</button>
+          </div>
+
+          <div class="container-box">
+            <div class="container-img">
+              <img src="../img/nn1.gif" alt="" />
+            </div>
+            <h5>Tên sách</h5>
+            <p><del>14,656,000 đ</del></p>
+            <h6>12,454,000 đ</h6>
+            <button href="" class="addToCart">Giỏ hàng</button>
+          </div>
+        </div>
+    </div>
+   </section>
+   <!-- CONTENT END -->
+    <!-- ----------FOOTER--------------- -->
+    <footer class="p-4 text-white">
+      <div class="wrap">
+        <div class="row">
+          <div class="col-12 col-md-4 my-4">
+            <div class="header__logo d-flex align-items-center">
+              <img src="../img/logo.png" class="me-2" alt="" />
+            </div>
+            <br />
+            <div>
+              <strong style="font-size: 22px"
+                >Cuộc Hành Trình Đến Tận Cùng Vũ Trụ</strong
+              ><br />
+              <strong>Bookstore </strong> là một nơi tuyệt vời để khám phá và
+              mua sắm các cuốn sách đa dạng và phong phú từ các thể loại khác
+              nhau. Với mục tiêu mang đến cho người đọc trải nghiệm đọc sách
+              tuyệt vời, chúng tôi cung cấp một bộ sưu tập sách phong phú và đa
+              dạng từ các tác giả nổi tiếng và xu hướng hiện nay.
+            </div>
+          </div>
+          <div class="col-12 col-md-4 my-4">
+            <h4>Thông tin liên hệ</h4>
+            <div class="ps-4 my-3">
+              <h5>Điện thoại</h5>
+              <div class="ps-4">
+                <a href="tel:+84 912 650 143">+84 912 650 143</a> <br />
+                <a href="tel:+84 789 994 686">+84 789 994 686</a>
+              </div>
+            </div>
+            <div class="ps-4">
+              <h5>Mail</h5>
+              <div class="ps-4">
+                <a href="mailto:phongnt.22it@vku.udn.vn"
+                  >phongnt.22it@vku.udn.vn</a
+                >
+                <br />
+                <a href="mailto:lanhntm.22it@vku.udn.vn"
+                  >lanhntm.22it@vku.udn.vn</a
+                >
+                <br />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 my-4">
+            <h4>Hỗ trợ - Dịch vụ</h4>
+            <div class="my-3">
+              <a href="#">Hướng dẫn đặt hàng và thanh toán</a> <br />
+              <a href="#">Tra cứu đơn hàng</a> <br />
+              <a href="#">Chính sách đổi trả và hoàn tiền</a> <br />
+              <a href="#">Chính sách bảo hành</a> <br />
+              <a href="#">Phạm vi và điều khoản gói bảo hành</a> <br />
+              <a href="#">Chính sách bảo mật thông tin</a> <br />
+              <a href="#">Chính sách giải quyết khiếu nại</a> <br />
+              <a href="#">Liên hệ với chúng tôi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $('.toggle').click(function () {
+          $('nav').slideToggle();
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

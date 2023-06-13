@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F4D03F;
+}
+
+.wrap {
+    margin: auto 75px;
+}
+
+.title__color {
+    color: #F4D03F;
+}
+
+.price__color {
+    color: #FD475A;
+}
+
+button {
+    border: 1px solid #F4D03F !important;
+    color: #F4D03F;
+}
+
+button:hover {
+    background-color: #F4D03F !important;
+    color: white;
+}
+
+/* -------- Header Start------------ */
+.header{
+    height: 80px;
+    background-color: #16A085 ;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px 40px;
+}
+.header a{
+    text-decoration: none;
+}
+.header__search {
+    height: 50px;
+    padding: 0;
+}
+
+.header__user{
+    display: flex;
+}
+
+
+/* -------- Header End------------ */
+
+
+/* -------- Nav Start------------ */
+
+ul{
+    list-style-type: none;
+}
+nav{
+    background-color: #F4D03F;
+}
+nav #main-menu li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 8px 20px;
+    font-size: 20px;
+}
+#main-menu {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+nav #main-menu li:hover .subnav {
+    display: block;
+}
+nav #main-menu > li:hover > a,
+nav #main-menu .subnav li:hover a{
+    background-color: #16A085;
+    color: white;
+    transition: all 0.5s;
+}
+#main-menu .subnav{ 
+    display: none;
+    position: absolute;
+}
+#main-menu .subnav li {
+    background-color: #F4D03F;
+}
+
+.toggle{
+    display: none;
+    background-color: #F4D03F;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.arrow-down{
+    font-size: 14px ;
+    
+}
+@media screen and (max-width: 678px) {
+  #main-menu{
+    flex-direction: column;
+    text-align: left;
+  }
+  .toggle{
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+
+}
+/* -------- Nav End------------ */
+
+
+
+/* -------- Content Start------------ */
+
+.content>h1 {
+    color: #F4D03F;
+}
+
+.form-check-input,
+.form-check-input:focus {
+    border: 1px solid #F4D03F;
+}
+
+.form-check-input:checked {
+    background-color: #F4D03F   ;
+    border: 1px solid #F4D03F   ;
+}
+
+.content__body__products select {
+    border: 1px solid #F4D03F   ;
+    color: #F4D03F  ;
+}
+
+.content__body__products select:focus {
+    border: 1px solid #F4D03F   ;
+}
+
+.content__body__products .count,
+#color {
+    color: #F4D03F  ;
+}
+
+.content__body__form {
+    width: 50%;
+}
+
+.content__body__form>div>input:focus,
+.content__body__form>div>select:focus,
+.content__body__form>div>textarea:focus {
+    border: 1px solid #F4D03F   ;
+}
+
+/* -------- Content End------------ */
+
+
+/* -------- Footer Start------------ */
+
+footer {
+    background-color: #16A085;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* -------- Footer End------------ */
+
+
+/* -------- Reponsive End------------ */
+@media only screen and (max-width: 1200px) {
+    .header__search{
+        padding: 10px 0;
+    }
+    .header{
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header__search{
+        padding: 10px 0;
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .img-logo{
+        padding: 10px 5px;
+        width: 150px;
+    }
+    .header__search{
+        width: 300px;
+    }
+    .header__user > span {
+        display: none;
+    }
+    .header__user{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 676px){
+    .subnav{
+        bottom: -60%;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 578px){
+    .me-2{
+        width: 200px;
+    }
+    .img-logo{
+        width: 100px;
+    }
+    .header .icon {
+        width: 20%;
+    }
+    .header__user{
+       width: 20%;
+       font-size: 14px;
+    }
+    .header__search{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 438px){
+     .img-logo{
+       padding: auto 0;
+    }
+}
+
+
+/* -------- Reponsivve End------------ */

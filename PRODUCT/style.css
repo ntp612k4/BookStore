@@ -37,6 +37,7 @@ html {
 
 ul {
   list-style-type: none;
+  
 }
 nav {
   background-color: #f4d03f;
@@ -56,6 +57,7 @@ nav #main-menu li a {
 }
 nav #main-menu li:hover .subnav {
   display: block;
+  padding-left: 0;
 }
 nav #main-menu > li:hover > a,
 nav #main-menu .subnav li:hover a {
@@ -69,6 +71,7 @@ nav #main-menu .subnav li:hover a {
 }
 #main-menu .subnav li {
   background-color: #f4d03f;
+  padding-left: 21px;
 }
 
 .toggle {
@@ -96,6 +99,13 @@ nav #main-menu .subnav li:hover a {
   }
 }
 /* -------- Nav End------------ */
+
+
+/* -------------CONTENT START -----------*/
+.menu{
+  margin-bottom: 20px;
+}
+/* -------------CONTENT START -----------*/
 
 /* -------- Footer Start------------ */
 
@@ -145,8 +155,14 @@ footer a:hover {
   width: 78%;
   padding: 0 10px;
   }
-.sidebar .sidebar__category{
+.sidebar .sidebar__category h3{
   text-align: center;
+}
+.sidebar .sidebar__category a{
+  padding: 10px 14px;
+  text-decoration: none;
+  color: black;
+
 }
 .sidebar > * {
  width: 100%; 
@@ -154,13 +170,18 @@ footer a:hover {
 .sidebar__category{
   border-bottom: 4px #f0f0f0 solid;
 }
-.sidebar__filter {
-  padding: 15px 10px;
+.sidebar__filter,
+.sidebar .sidebar__category span {
+  padding: 15px 15px;
 }
-.sidebar__filter span{
+.sidebar__filter span,
+.sidebar .sidebar__category span{
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
+}
+.pad{
+  padding-left: 2rem;
 }
 .sidebar__filter ul{
   padding-left: 10px;

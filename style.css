@@ -64,6 +64,7 @@ nav #main-menu .subnav li:hover a{
 #main-menu .subnav{ 
     display: none;
     position: absolute;
+    z-index: 600;
 }
 #main-menu .subnav li {
     background-color: #F4D03F;
@@ -222,11 +223,22 @@ footer a:hover {
         align-items: center;
     }
 }
+@media screen and (max-width: 826px){
+    .img-container img{
+        height: 70px;
+    }
+    nav #main-menu li a {
+        font-size: 16px;
+    }
+}
 
 @media screen and (max-width: 676px){
     .subnav{
         bottom: -60%;
         right: 0;
+    }
+    .img-container img{
+        height: 50px;
     }
 }
 
@@ -253,6 +265,16 @@ footer a:hover {
      .img-logo{
        padding: auto 0;
     }
+    .img-container img{
+        height: 40px;
+
+    }
+    .img-container img{
+        height: 40px;
+    }
+}
+@media only screen and (max-width: 320px){
+    
 }
 
 

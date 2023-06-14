@@ -82,8 +82,12 @@ nav #main-menu li a {
     margin-bottom: 0;
     position: relative;
 }
+nav #main-menu .subnav {
+    margin-bottom: -28px;
+  }
 nav #main-menu li:hover .subnav {
     display: block;
+    padding-left: 0;
 }
 nav #main-menu > li:hover > a,
 nav #main-menu .subnav li:hover a{
@@ -97,6 +101,7 @@ nav #main-menu .subnav li:hover a{
 }
 #main-menu .subnav li {
     background-color: #F4D03F;
+    padding-left: 21px;
 }
 
 .toggle{

@@ -1,31 +1,21 @@
-const container = document.querySelector(".container");
-const btnSignIn = document.querySelector(".btnSign-in");
-const btnSignUp = document.querySelector(".btnSign-up");
-
 $(document).ready(function () {
-  $("#changeRegisterForm").click(function (e) {
+  $(".login-parent>form button").click(function (e) {
     e.preventDefault();
-    $(".sign_in").addClass("d-none");
-    $(".sign_up").addClass("d-block");
-    $(selector).addClass(className);
-  });
+    let form = $(this).closest("form");
+    let userName = $(form).find("input[name='userName']").val();
+    let userEmail = $(form).find("input[name='userEmail']").val();
+    let userPassword = $(form).find("input[name='userPassword']").val();
+    let checkPassword = $(form).find("input[name='checkPassword']").val();
+    let agree = $(form).find("input[name='agree']").is(":checked");
 
-  $(".sign_in .bkg").click(function (e) {
-    e.preventDefault();
-    const email = $(".sign_in input[name='email'").val();
-    const pass = $(".sign_in input[name='password'").val();
-    if (email === "doancs1@gmail.com" && pass === "123") {
-      window.location.href = "../index.html";
+    if (agree === false) {
+      alert("Vui lòng đồng ý với các điều khoản của chúng tôi để tiếp tục!");
+    } else if (userPassword !== checkPassword) {
+      alert("Hai mật khẩu không khớp nhau!");
+    } else if (userEmail === "" || userName === "" || userPassword === "") {
+      alert("Vui lòng điền đầy đủ thông tin!");
     } else {
-      alert("Sai tên đăng nhập hoặc mật khẩu!");
+      alert("Đăng kí thành công!");
     }
   });
-});
-
-btnSignIn.addEventListener("click", () => {
-  container.classList.add("active");
-});
-
-btnSignUp.addEventListener("click", () => {
-  container.classList.remove("active");
 });

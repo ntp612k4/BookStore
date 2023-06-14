@@ -49,6 +49,9 @@ nav #main-menu li a {
   padding: 8px 20px;
   font-size: 20px;
 }
+nav #main-menu .subnav {
+  margin-bottom: -28px;
+}
 #main-menu {
   display: flex;
   padding-left: 0;

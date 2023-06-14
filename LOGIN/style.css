@@ -1,267 +1,250 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
-
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'open sans', sans-serif;
+/* -------- Header Start------------ */
+.header{
+    height: 80px;
+    background-color: #16A085 ;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-}
-
-.container {
-    width: 60%;
-    display: flex;
-    height: 650px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.đk {
-    color: #fff;
-}
-
-
-
-@keyframes Show {
-
-    0%,
-    49.999% {
-        opacity: 0;
-        z-index: 1;
-    }
-
-    100% {
-        opacity: 1;
-        z-index: 5;
-    }
-}
-
-@keyframes Hidden {
-
-    0%,
-    49.999% {
-        opacity: 1;
-        z-index: 5;
-    }
-
-    100% {
-        opacity: 0;
-        z-index: 1;
-    }
-}
-
-.container .box {
     position: relative;
-    display: flex;
-    height: 100%;
-    width: 50%;
-    transition: all 0.8s;
-    transform: translateX(0);
-    background-color: #16A085;
-    z-index: 1;
-    overflow: hidden;
-}
-
-
-.container.active .box {
-    transform: translateX(100%);
-}
-
-.container .box .form {
-    position: absolute;
-    height: 100%;
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+    padding: 10px 40px;
+}
+.header a{
+    text-decoration: none;
+}
+.header__search {
+    height: 50px;
+    padding: 0;
 }
 
-.container .box .form.sign_up {
-    transition: all 1.15s;
-    z-index: 1;
-    /* opacity: 0; */
-    background-color: #16A085;
-}
-
-.container .box .form.sign_in {
-    /* opacity: 1; */
-    transition: all 1.15s;
-    z-index: 5;
-    background-color: #16A085;
-}
-
-.container.active .box .form.sign_in {
-    z-index: 1;
-    opacity: 0;
-}
-
-.container.active .box .form.sign_up {
-    z-index: 5;
-    opacity: 1;
-}
-
-.container .overlay {
+.header__user{
     display: flex;
-    height: 100%;
-    width: 50%;
-    transition: all 0.8s;
-    transform: translateX(0);
-    background-color: #fff;
-    z-index: 1;
-    overflow: hidden;
-    z-index: 5;
-    opacity: 1;
 }
 
-.container.active .overlay {
-    transform: translateX(-100%);
-}
 
-.container .overlay .page {
-    height: 100%;
-    min-width: 100%;
+/* -------- Header End------------ */
+
+
+/* -------- Nav Start------------ */
+
+ul{
+    list-style-type: none;
+}
+nav{
+    background-color: #F4D03F;
+}
+nav #main-menu .subnav {
+  margin-bottom: -24px;
+}
+nav #main-menu li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 8px 20px;
+    font-size: 20px;
+}
+#main-menu {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+nav #main-menu li:hover .subnav {
+    display: block;
+    padding-left: 0;
+}
+nav #main-menu > li:hover > a,
+nav #main-menu .subnav li:hover a{
+    background-color: #16A085;
+    color: white;
     transition: all 0.5s;
-    opacity: 1;
+}
+#main-menu .subnav{ 
+    display: none;
+    position: absolute;
+    z-index: 600;
+}
+#main-menu .subnav li {
+    background-color: #F4D03F;
+    padding-left: 21px;
 }
 
-.container.active .overlay .page.page_signIn {
-    opacity: 0;
-    margin-left: -100%;
-}
-
-.container.active .overlay .page.page_signUp {
-    margin-left: 0%;
-}
-
-
-.overlay .page h3 {
-    color: #16A085;
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.overlay .page p {
-    color: #16A085;
-    font-weight: 600;
-    margin-bottom: 20px;
-    font-size: 17px;
-}
-
-.btn {
-    display: inline-block;
-    outline: none;
-    color: #16A085;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 550;
-    background-color: transparent;
-    padding: 12px 45px;
-    border-radius: 22px;
-    border: 1.5px solid #16A085;
+.toggle{
+    display: none;
+    background-color: #F4D03F;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
     cursor: pointer;
 }
-
-.form h3 {
-    color: #222;
-    font-size: 40px;
+.arrow-down{
+    font-size: 14px ;
+    
 }
-
-.form span {
-    color: #3a3838;
-}
-
-#form_input .type {
-    width: 330px;
-    height: 48px;
-    background-color: #EEEDEF;
-    margin: 30px 0;
-}
-
-#form_input .type input {
-    width: 100%;
-    height: 100%;
-    padding: 0 10px;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-}
-
-#form_input .type input::placeholder {
-    color: #A9A8A9;
-}
-
-#form_input .forgot {
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-
-.bkg {
-    background-color: #fff;
-}
-
-.forgotten {
+@media screen and (max-width: 678px) {
+  #main-menu{
+    flex-direction: column;
+    text-align: left;
+  }
+  .toggle{
+    display: block;
+  }
+  nav {
     display: none;
+  }
+
+}
+/* -------- Nav End------------ */
+
+/*********** MAIN ***********/
+.login-parent {
+    width: 100%;
+    max-width: 556px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 50px 60px;
+}
+
+.login-parent>div>div {
+    margin: 15px 0;
+}
+
+.login-parent h3 {
+    font-size: 600;
+}
+
+.login-parent a {
+    color: #D2B89C;
+}
+
+.login-parent .sign-up {
+    font-size: 0.75rem;
+}
+
+.login-parent .btn-sign-up button {
+    border: 1px solid rgb(206, 201, 201);
+}
+
+.login-parent .btn-sign-up button:hover {
+    background-color: rgb(206, 201, 201);
+}
+
+.login-parent .btn-sign-up button:hover span {
+    color: white;
+}
+
+/* -------- Footer Start------------ */
+
+footer {
+    background-color: #16A085;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* -------- Footer End------------ */
+
+
+/* -------- Reponsive End------------ */
+@media only screen and (max-width: 1200px) {
+    .header__search{
+        padding: 10px 0;
+    }
+    .header{
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header__search{
+        padding: 10px 0;
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .img-logo{
+        padding: 10px 5px;
+        width: 150px;
+    }
+    .header__search{
+        width: 300px;
+    }
+    .header__user > span {
+        display: none;
+    }
+    .header__user{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 826px){
+    .img-container img{
+        height: 70px;
+    }
+    nav #main-menu li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 676px){
+    .subnav{
+        bottom: -60%;
+        right: 0;
+    }
+    .img-container img{
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 578px){
+    .me-2{
+        width: 200px;
+    }
+    .img-logo{
+        width: 100px;
+    }
+    .header .icon {
+        width: 20%;
+    }
+    .header__user{
+       width: 20%;
+       font-size: 14px;
+    }
+    .header__search{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 438px){
+     .img-logo{
+       padding: auto 0;
+    }
+    .img-container img{
+        height: 40px;
+
+    }
+    .img-container img{
+        height: 40px;
+    }
+}
+@media only screen and (max-width: 320px){
+
 }
 
 
-@media only screen and (max-width: 400px) {
-
-    .container {
-        width: 100% !important;
-        box-shadow: none !important;
-    }
-
-    .overlay {
-        display: none !important;
-
-    }
-
-    .box {
-        width: 100% !important;
-    }
-
-    .forgotten {
-        display: block !important;
-    }
-}
-
-@media only screen and (max-width: 850px) {
-
-    .container {
-        width: 100% !important;
-        box-shadow: none !important;
-    }
-
-    .overlay {
-        display: none !important;
-
-    }
-
-    .box {
-        width: 100% !important;
-    }
-
-    .forgotten {
-        display: block !important;
-    }
-
-    .container .box .form.sign_up {
-        opacity: 0;
-    }
-}
+/* -------- Reponsivve End------------ */

@@ -17,6 +17,9 @@
     text-align: center;
     padding: 10px 40px;
 }
+.header-11{
+    color: white;
+}
 .header a{
     text-decoration: none;
 }
@@ -149,6 +152,9 @@ nav #main-menu .subnav li:hover a{
     text-align: center;
     margin-top: 1rem;
 }
+.row-items a{
+    color: black;
+}
 .container-box{
     background: var(--bg-color);
     border: 2px solid #f0eded;
@@ -158,6 +164,7 @@ nav #main-menu .subnav li:hover a{
     cursor: pointer;
 }
 .container-box:hover{
+    color: black;
     box-shadow: 5px 30px 56px rgba(42, 39, 39, 0.12);
     border: 2px solid transparent;
     transform: translateY(-4px);

@@ -37,15 +37,23 @@ a:hover {
     display: flex;
     position: relative;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
     padding: 10px 40px;
+}
+.header-11{
+    color: white;
 }
 .header a{
     text-decoration: none;
 }
 .header__search {
-    height: 40px;
+    height: 50px;
+    padding: 0;
+}
 
+.header__user{
+    display: flex;
 }
 /*********** MAIN ***********/
 .menu * {
@@ -83,17 +91,17 @@ label {
 }
 
 #buyNow {
-    border: 2px solid #D2B89C;
+    border: 2px solid #F4D03F;
     background-color: white;
 }
 
 #buyNow * {
-    color: #D2B89C;
+    color: #F4D03F;
     transition: 0.8s;
 }
 
 #buyNow:hover {
-    background-color: #D2B89C;
+    background-color: #F4D03F;
 }
 
 #buyNow:hover * {
@@ -160,6 +168,87 @@ footer a:hover {
 }
 
 /* RESPONSIVE */
+@media only screen and (max-width: 1200px) {
+    .header__search{
+        padding: 10px 0;
+    }
+    .header{
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header__search{
+        padding: 10px 0;
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .img-logo{
+        padding: 10px 5px;
+        width: 150px;
+    }
+    .header__search{
+        width: 300px;
+    }
+    .header__user > span {
+        display: none;
+    }
+    .header__user{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 826px){
+    .img-container img{
+        height: 70px;
+    }
+    nav #main-menu li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 676px){
+    .subnav{
+        bottom: -60%;
+        right: 0;
+    }
+    .img-container img{
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 578px){
+    .me-2{
+        width: 200px;
+    }
+    .img-logo{
+        width: 100px;
+    }
+    .header .icon {
+        width: 20%;
+    }
+    .header__user{
+       width: 20%;
+       font-size: 14px;
+    }
+    .header__search{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 438px){
+     .img-logo{
+       padding: auto 0;
+    }
+    .img-container img{
+        height: 40px;
+
+    }
+    .img-container img{
+        height: 40px;
+    }
+}
 @media (max-width: 575.98px) {
     .wrap {
         margin: auto 0;

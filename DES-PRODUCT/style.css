@@ -58,12 +58,12 @@ a:hover {
 /*********** MAIN ***********/
 .menu * {
     color: #777979;
+    margin-top: 20px;
 }
 
-.menu>span {
-    color: #D2B89C;
+.menu .pro {
+    color: #F4D03F;
 }
-
 .choose__product>div>div>div:nth-child(2) {
     background-color: #F4D03F;
 }
@@ -78,7 +78,7 @@ label {
 }
 
 .choose__product__version .version:hover {
-    border: 1px solid #D2B89C;
+    border: 1px solid #F4D03F  ;
 }
 
 /* OFFER */

@@ -43,6 +43,10 @@ ul {
   list-style-type: none;
   
 }
+#main-menu .key {
+  background-color: #16a085;
+  color: white !important;
+}
 nav {
   background-color: #f4d03f;
 }
@@ -227,7 +231,7 @@ footer a:hover {
 }
 .container-box:hover{
     box-shadow: 5px 30px 56px rgba(42, 39, 39, 0.12);
-    border: 2px solid transparent;
+    border: 2px solid #F4D03F;
     transform: translateY(-4px);
 }
 .container-box .addToCart{

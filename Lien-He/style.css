@@ -41,6 +41,10 @@
 ul{
     list-style-type: none;
 }
+#main-menu .key{
+    background-color: #16A085;
+    color: white;
+}
 nav{
     background-color: #F4D03F;
 }

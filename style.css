@@ -31,7 +31,10 @@
 .header__user{
     display: flex;
 }
-
+#main-menu .key{
+    background-color: #16A085 !important;
+    color: white !important;
+}
 
 /* -------- Header End------------ */
 
@@ -166,7 +169,7 @@ nav #main-menu .subnav li:hover a{
 .container-box:hover{
     color: black;
     box-shadow: 5px 30px 56px rgba(42, 39, 39, 0.12);
-    border: 2px solid transparent;
+    border: 2px solid #F4D03F;
     transform: translateY(-4px);
 }
 .container-box .addToCart{

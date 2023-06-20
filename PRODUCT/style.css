@@ -73,7 +73,7 @@ nav #main-menu li:hover .subnav {
 nav #main-menu > li:hover > a,
 nav #main-menu .subnav li:hover a {
   background-color: #16a085;
-  color: white;
+  color: white !important;
   transition: all 0.5s;
 }
 #main-menu .subnav {
@@ -114,7 +114,7 @@ nav #main-menu .subnav li:hover a {
 
 /* -------------CONTENT START -----------*/
 .menu{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 /* -------------CONTENT START -----------*/
 

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>Đắc Nhân Tâm</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="icon col-sm-3 ">
+            <img src="../img/logo.png" alt="" width="250px" height="auto" class="img-logo">
+        </div>
+        <div class="header__search  input-group w-50 col-sm-3 ">
+            <span class="input-group-text border-0 background_color_second" style="background-color: white;">
+                <i class="fa fa-search"></i></span>
+            <input type="text" class="form-control border-0 background_color_second p-2 "
+                placeholder="Tìm kiếm sản phẩm">
+            <span class="input-group-text background_color_second border-0"></span>
+        </div>
+        <div class="header__user ms-2  ">
+            <a class="me-2 text-decoration-none text-white  col-xs-12" href="../LOGIN/index.html">
+                <i class="fa fa-user"></i>
+                <span class="ms-2 ">Đăng nhập</span>
+            </a>
+            <span class="text-white me-2">|</span>
+            <a class="me-2 text-decoration-none text-white col-xs-12 " href="../CART/index.html">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="ms-2 ">Giỏ hàng</span>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- CONTENT -->
+    <main class="mb-3">
+        <div class="wrap">
+            <div class="menu">
+                <i class="fa fa-home"></i> <a href="../index.html">Trang chủ</a> <i class="fa fa-angle-right"></i> <a
+                    href="#">Danh mục sản phẩm</a> <i class="fa fa-angle-right"></i> <a class="pro" href="../PRODUCT/vanhoc.html">Sách văn học </a>
+            </div>
+            <div class="product__title">
+                <h4 class="my-3 text-black">Tuổi Thơ Dữ Dội</h4>
+            </div>
+            <div class="choose__product">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="card border-0">
+                            <div class="img p-5 d-flex justify-content-center" id="imgurl">
+                                <img src="../img/tuoi-tho-du-doi.webp" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <button class="border-0 h-100 p-3"><i class="fa fa-caret-left"></i></button>
+                                    </div>
+                                    <div class="col"><img src="../img/ki-luat.webp" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="col"><img src="../img/ki-luat.webp" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="col"><img src="../img/ki-luat.webp" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="col"><img src="../img/ki-luat.webp" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="col">
+                                        <button class="border-0 h-100 p-3"><i class="fa fa-caret-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 m-auto">
+                        <div class="mb-2">
+                            <h4 class="price__color fw-bold d-inline" id="product-price">54.000 đ</h4> / Giá đã bao gồm 10% VAT
+                        </div>
+                        <div class="text-white text-center py-1 mb-2">
+                            Miễn phí vận chuyển toàn quốc <i class="fa fa-shipping-fast text-white"></i>
+                        </div>
+                       
+                        <div class="product__offer position-relative w-100 h-100 rounded-2 mb-3">
+                            <ul class="mt-3">
+                                <li>Khám phá vô số trang sách đẹp, giá tốt. Một cánh cửa tới thế giới tri thức!</li>
+                                <li>Dễ dàng kết hợp với các sản phẩm khác trong bộ sưu tập SUND</li>
+                                <li>Có nhiều màu sắc để lựa chọn</li>
+                            </ul>
+                        </div>
+                        <div class="choose__product__button">
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <button class="w-100 rounded-pill" id="buyNow">
+                                        <div><strong>MUA NGAY</strong></div>
+                                        <div>(GIAO TẬN NƠI HOẶC LẤY TẠI CỬA HÀNG)</div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                              
+                                <div class="col">
+                                    <button class="w-100 rounded-pill" id="addCart">
+                                        <div><strong><i class="fa fa-cart-plus"></i></strong></div>
+                                        <div>(THÊM VÀO GIỎ HÀNG)</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product__desc d-flex justify-content-center my-3">
+                <div class="accordion w-50" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Mô tả sản phẩm
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                    <p><strong>Kỷ Luật Tích Cực Với Tình Yêu Và Giới Hạn</strong></p>
+                                    <p> “Kỷ luật tích cực với tình yêu và giới hạn” được coi là một trong 10 cuốn sách kinh điển về chủ đề xây dựng tính kỷ luật cho trẻ trong suốt 30 năm qua, theo đánh giá của tạp chí văn học dành cho các bà mẹ - “Brain, Child. Cuốn sách được xuất bản từ cách đây 30 năm, liên tục được tác giả, Ts. Jerry Wuckoff và đồng sự của ông, Barbana C.Unell, cập nhật nội dung trong suốt quá trình thực hành và nghiên cứu của họ.                                “Kỷ luật tích cực với tình yêu và giới hạn” được coi là một trong 10 cuốn sách kinh điển về chủ đề xây dựng tính kỷ luật cho trẻ trong suốt 30 năm qua, theo đánh giá của tạp chí văn học dành cho các bà mẹ - “Brain, Child. Cuốn sách được xuất bản từ cách đây 30 năm, liên tục được tác giả, Ts. Jerry Wuckoff và đồng sự của ông, Barbana C.Unell, cập nhật nội dung trong suốt quá trình thực hành và nghiên cứu của họ.
+                                    </p>                                    
+                                    <p>                             
+                                        Cuốn sách được chia làm 2 phần:
+                                    </p>                                    
+                                    <p>
+                                        Lý thuyết: gồm 4 chương, bạn đọc chỉ cần đọc 4 chương này để nắm được những nguyên lý cơ bản trong việc xây dựng tính kỷ luật và khuôn phép cho con. Sau đó gấp sách lại.
+                                    </p>                 
+                                    <p>
+                                        Chương 1:  Vai trò của những thành viên trong gia đình trong việc giáo dục trẻ
+                                    </p>                    
+                                    <p>
+                                        Chương 2: Nguyên tắc và hướng dẫn để tạo lòng tin và xây dựng quan hệ tích cực với trẻ.
+                                    </p>
+                                    <p>
+                                        Chương 3: Những tác động của kỷ luật và hình thức kỷ luật đối với sự phát triển tâm sinh lý của trẻ.
+                                    </p>
+                                    <p>
+                                        Chương 4: Những thuật ngữ được sử dụng trong quá trình áp dụng.
+                                    </p>
+                                    <p>
+                                        Thực hành: 43 tình huống về hành vi cần điều chỉnh của trẻ trong cuộc sống hàng ngày. Bất cứ khi nào bố mẹ thấy trẻ có hành vi chưa đúng, hãy mở sách ra, tìm đọc nội dung liên quan.
+                                    </p>                                    
+                                    Hành vi xã hội: 13 hành vi (hung hăng & bắt nạt; cáu giận & ăn vạ…)
+                                    Ăn, ngủ, vệ sinh: 9 hành vi (ăn vạ trong giờ ăn; ăn quá nhiều…)
+                                    Ngôn ngữ và gây ồn: 5 hành vi (gây ồn; nói bậy…)
+                                    Sự độc lập: 8 hành vi (phớt lờ yêu cầu; từ chối nhận giúp đỡ…)
+                                    Hoạt động: 2 (Nghiện xem tivi, điện thoại; leo trèo…)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Thông tin chi tiết
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <div class="col">
+                                    <div class="fw-bold">Ngày xuất bản</div>
+                                    <div class="fw-bold">Kích thước </div>
+                                    <div class="fw-bold">Loại bìa </div>
+                                    <div class="fw-bold">Số trang</div>
+                                  
+                                </div>
+                                <div class="col">
+                                    <div>12-04-2022</div>
+                                    <div>15.6 x 24 cm</div>
+                                    <div>Bìa mềm</div>
+                                    <div>432</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-4 text-white">
+        <div class="wrap">
+            <div class="row">
+                <div class="col-12 col-md-4 my-4">
+
+                    <div class="header__logo d-flex align-items-center">
+                        <img src="../img/logo.png" class="me-2" alt="">
+                    </div>
+                    <br>
+                    <div>
+                        <strong style="font-size: 22px;">Cuộc Hành Trình Đến Tận Cùng Vũ Trụ</strong><br>
+                        <strong>Bookstore </strong> là một nơi tuyệt vời để khám phá và mua sắm các cuốn sách đa dạng và phong phú từ các thể loại khác nhau. 
+                        Với mục tiêu mang đến cho người đọc trải nghiệm đọc sách tuyệt vời, chúng tôi cung cấp một bộ sưu tập sách phong phú và đa dạng từ các tác giả nổi tiếng và xu hướng hiện nay.
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 my-4">
+                    <h4>Thông tin liên hệ</h4>
+                    <div class="ps-4 my-3 ">
+                        <h5>Điện thoại</h5>
+                        <div class="ps-4">
+                            <a href="tel:+84 912 650 143">+84 912 650 143</a> <br>
+                            <a href="tel:+84 789 994 686">+84 789 994 686</a> 
+                        </div>
+                    </div>
+                    <div class="ps-4">
+                        <h5>Mail</h5>
+                        <div class="ps-4">
+                            <a href="mailto:phongnt.22it@vku.udn.vn">phongnt.22it@vku.udn.vn</a> <br>
+                            <a href="mailto:lanhntm.22it@vku.udn.vn">lanhntm.22it@vku.udn.vn</a> <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 my-4">
+                    <h4>Hỗ trợ - Dịch vụ</h4>
+                    <div class="my-3 ">
+                        <a href="#">Hướng dẫn đặt hàng và thanh toán</a> <br>
+                        <a href="#">Tra cứu đơn hàng</a> <br>
+                        <a href="#">Chính sách đổi trả và hoàn tiền</a> <br>
+                        <a href="#">Chính sách bảo hành</a> <br>
+                        <a href="#">Phạm vi và điều khoản gói bảo hành</a> <br>
+                        <a href="#">Chính sách bảo mật thông tin</a> <br>
+                        <a href="#">Chính sách giải quyết khiếu nại</a> <br>
+                        <a href="#">Liên hệ với chúng tôi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

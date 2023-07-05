@@ -54,6 +54,7 @@ button:hover {
 .header__search {
     height: 50px;
     padding: 0;
+    width: 50% !important;
 }
 
 .header__user{
@@ -266,5 +267,27 @@ footer a:hover {
     }
 }
 
+
+/* table */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .header__logo  img {
+        width: 235px;
+    }
+}
+
+@media only screen and (max-width: 46.1875em){
+    .header__user a {
+        width: 93px;
+    }
+    .log {
+        width: 103px !important;
+    }
+    .header__user {
+        margin-left: -13px !important;
+    }
+    .header__search {
+        margin-left: 20px;
+    }
+}
 
 /* -------- Reponsivve End------------ */

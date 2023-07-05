@@ -29,6 +29,7 @@ html {
 .header__search {
   height: 50px;
   padding: 0;
+  width: 50% !important;
 }
 
 .header__user {
@@ -121,12 +122,12 @@ nav #main-menu .subnav li:hover a {
 /* -------- Footer Start------------ */
 
 footer {
-  background-color: #16a085;
-  /* margin-top: 20px; */
+  background-color: #16A085;
+  margin-top: 20px;
 }
 
 footer a {
-  color: white;
+  color: white !important;
   text-decoration: none;
 }
 
@@ -134,7 +135,6 @@ footer a:hover {
   color: white;
   text-decoration: underline;
 }
-
 /* -------- Footer End------------ */
 
 /* Content start */
@@ -327,9 +327,36 @@ footer a:hover {
   }
 }
 
-@media only screen and (max-width: 438px) {
+
+
+/* table */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+  .header__logo  img {
+      width: 235px;
+  }
+  .header__user a{
+    margin-left: 30px;
+  }
+  .header__search {
+    width: 360px;
+  }
+}
+
+@media only screen and (max-width: 46.1875em){
+  .header__user a {
+      width: 93px;
+  }
+  .log {
+      width: 103px !important;
+  }
+  .header__user {
+      margin-left: -13px !important;
+  }
   .img-logo {
     padding: auto 0;
+  }
+  .header__search {
+    margin-left: 20px;
   }
 }
 

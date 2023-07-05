@@ -27,9 +27,13 @@
     height: 50px;
     padding: 0;
 }
+.header__search {
+    width: 50% !important;
+}
 
 .header__user{
     display: flex;
+    margin-left: 0.5rem !important;
 }
 #main-menu .key{
     background-color: #16A085 !important;
@@ -214,6 +218,27 @@ footer a:hover {
 
 
 /* -------- Reponsive End------------ */
+
+/* table */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .header__logo  img {
+        width: 235px;
+    }
+}
+
+@media only screen and (max-width: 46.1875em){
+    .header__user a {
+        width: 93px;
+    }
+    .log {
+        width: 103px !important;
+    }
+    .header__user {
+        margin-left: -13px !important;
+    }
+}
+
+
 @media only screen and (max-width: 1200px) {
     .header__search{
         padding: 10px 0;

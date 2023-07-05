@@ -21,6 +21,7 @@
 .header__search {
     height: 50px;
     padding: 0;
+    width: 50% !important;
 }
 
 .header__user{
@@ -242,9 +243,27 @@ footer a:hover {
         height: 40px;
     }
 }
-@media only screen and (max-width: 320px){
 
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .header__logo img {
+        width: 235px;
+    }
+    .header__logo  img {
+        width: 235px;
+    }
 }
 
+
+@media only screen and (max-width: 46.1875em){
+    .header__user a {
+        width: 95px;
+    }
+    .log {
+        width: 103px !important;
+    }
+    .header__user {
+        margin-left: -13px !important;
+    }
+}
 
 /* -------- Reponsivve End------------ */

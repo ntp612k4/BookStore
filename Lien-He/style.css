@@ -26,10 +26,12 @@
 .header__search {
     height: 50px;
     padding: 0;
+    width: 50%;
 }
 
 .header__user{
     display: flex;
+    margin-left: 0.5rem !important;
 }
 
 
@@ -292,8 +294,41 @@ footer a:hover {
         height: 40px;
     }
 }
-@media only screen and (max-width: 320px){
 
+
+/* table */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .header__logo  img {
+        width: 235px;
+    }
+    .header__search  {
+        width: 415px !important;
+    }
+}
+
+@media only screen and (max-width: 46.1875em){
+    .header__user a {
+    }
+    .log {
+        width: 103px !important;
+    }
+    .header__search {
+        margin-left: -10px !important;
+        width: 104px !important;
+    }
+    .header__user {
+        margin-left: -13px !important;
+
+    }
+    .header__user a {
+        margin-left: -15px;
+    }
+    .header__user span {
+        font-size: 14px;
+    }
+    .header__user i{
+        font-size: 16px;
+    }
 }
 
 

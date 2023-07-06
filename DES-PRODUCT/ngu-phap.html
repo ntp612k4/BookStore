@@ -20,7 +20,7 @@
         <div class="icon col-sm-3 ">
             <img src="../img/logo.png" alt="" width="250px" height="auto" class="img-logo">
         </div>
-        <div class="header__search  input-group w-50 col-sm-3 ">
+        <div class="header__search  input-group log col-sm-3 ">
             <span class="input-group-text border-0 background_color_second" style="background-color: white;">
                 <i class="fa fa-search"></i></span>
             <input type="text" class="form-control border-0 background_color_second p-2 "
@@ -59,20 +59,20 @@
                                 <img src="../img/Ngu-phap.webp" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
-                                <div class="row align-items-center">
+                                <div class="row align-items-center" id="listImages">
                                     <div class="col">
-                                        <button class="border-0 h-100 p-3"><i class="fa fa-caret-left"></i></button>
+                                        <button class="border-0 h-100 p-3" id="product-image-pre"><i class="fa fa-caret-left"></i></button>
                                     </div>
-                                    <div class="col"><img src="../img/ki-luat.webp" class="card-img-top" alt="...">
+                                    <div class="col"><img src="../img/Ngu-phap.webp" class="card-img-top" alt="...">
                                     </div>
-                                    <div class="col"><img src="../img/ki-luat.webp" class="card-img-top" alt="...">
+                                    <div class="col"><img src="../img/ngu-phap1.jpg" class="card-img-top" alt="...">
                                     </div>
-                                    <div class="col"><img src="../img/ki-luat.webp" class="card-img-top" alt="...">
+                                    <div class="col"><img src="../img/ngu-phap2.jpg" class="card-img-top" alt="...">
                                     </div>
-                                    <div class="col"><img src="../img/ki-luat.webp" class="card-img-top" alt="...">
+                                    <div class="col"><img src="../img/ngu-phap3.jpg" class="card-img-top" alt="...">
                                     </div>
                                     <div class="col">
-                                        <button class="border-0 h-100 p-3"><i class="fa fa-caret-right"></i></button>
+                                        <button class="border-0 h-100 p-3" id="product-image-next"><i class="fa fa-caret-right"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@
                         <div class="choose__product__button">
                             <div class="row mb-1">
                                 <div class="col">
-                                    <button class="w-100 rounded-pill" id="buyNow">
+                                    <button class="w-100 rounded-pill" id="addCart" onclick="window.location.href = '../CART/index.html'">
                                         <div><strong>MUA NGAY</strong></div>
                                         <div>(GIAO TẬN NƠI HOẶC LẤY TẠI CỬA HÀNG)</div>
                                     </button>
@@ -127,35 +127,19 @@
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                    <p><strong>Kỷ Luật Tích Cực Với Tình Yêu Và Giới Hạn</strong></p>
-                                    <p> “Kỷ luật tích cực với tình yêu và giới hạn” được coi là một trong 10 cuốn sách kinh điển về chủ đề xây dựng tính kỷ luật cho trẻ trong suốt 30 năm qua, theo đánh giá của tạp chí văn học dành cho các bà mẹ - “Brain, Child. Cuốn sách được xuất bản từ cách đây 30 năm, liên tục được tác giả, Ts. Jerry Wuckoff và đồng sự của ông, Barbana C.Unell, cập nhật nội dung trong suốt quá trình thực hành và nghiên cứu của họ.                                “Kỷ luật tích cực với tình yêu và giới hạn” được coi là một trong 10 cuốn sách kinh điển về chủ đề xây dựng tính kỷ luật cho trẻ trong suốt 30 năm qua, theo đánh giá của tạp chí văn học dành cho các bà mẹ - “Brain, Child. Cuốn sách được xuất bản từ cách đây 30 năm, liên tục được tác giả, Ts. Jerry Wuckoff và đồng sự của ông, Barbana C.Unell, cập nhật nội dung trong suốt quá trình thực hành và nghiên cứu của họ.
+                                    <p><strong>Giải Thích Ngữ Pháp Tiếng Anh </strong></p>
+                                    <p> Ngữ pháp Tiếng Anh tổng hợp các chủ điểm ngữ pháp trọng yếu mà học sinh cần nắm vững. Các chủ điểm ngữ pháp được trình bày rõ ràng, chi tiết. Sau mỗi chủ điểm ngữ pháp là phần bài tập & đáp án nhằm giúp các em củng cố kiến thức đã học, đồng thời tự kiểm tra kết quả.
                                     </p>                                    
                                     <p>                             
-                                        Cuốn sách được chia làm 2 phần:
+                                        Sách Giải Thích Ngữ Pháp Tiếng Anh, tác Mai Lan Hương - Hà Thanh Uyên, là cuốn sách ngữ pháp đã được phát hành và tái bản rất nhiều lần trong những năm qua.
                                     </p>                                    
                                     <p>
-                                        Lý thuyết: gồm 4 chương, bạn đọc chỉ cần đọc 4 chương này để nắm được những nguyên lý cơ bản trong việc xây dựng tính kỷ luật và khuôn phép cho con. Sau đó gấp sách lại.
-                                    </p>                 
+                                        Giải Thích Ngữ Pháp Tiếng Anh được biên soạn thành 9 chương, đề cập đến những vấn đề ngữ pháp từ cơ bản đến nâng cao, phù hợp với mọi trình độ. Các chủ điểm ngữ pháp trong từng chương được biên soạn chi tiết, giải thích cặn kẽ các cách dùng và quy luật mà người học cần nắm vững. Sau mỗi chủ điểm ngữ pháp là phần bài tập đa dạng nhằm giúp người học củng cố lý thuyết.                                    </p>                 
                                     <p>
-                                        Chương 1:  Vai trò của những thành viên trong gia đình trong việc giáo dục trẻ
+                                        Hy vọng Giải Thích Ngữ Pháp Tiếng Anh sẽ là một quyển sách thiết thực, đáp ứng yêu cầu học, ôn tập và nâng cao trình độ ngữ pháp cho người học và là quyển sách tham khảo bổ ích dành cho giáo viên.
+
                                     </p>                    
-                                    <p>
-                                        Chương 2: Nguyên tắc và hướng dẫn để tạo lòng tin và xây dựng quan hệ tích cực với trẻ.
-                                    </p>
-                                    <p>
-                                        Chương 3: Những tác động của kỷ luật và hình thức kỷ luật đối với sự phát triển tâm sinh lý của trẻ.
-                                    </p>
-                                    <p>
-                                        Chương 4: Những thuật ngữ được sử dụng trong quá trình áp dụng.
-                                    </p>
-                                    <p>
-                                        Thực hành: 43 tình huống về hành vi cần điều chỉnh của trẻ trong cuộc sống hàng ngày. Bất cứ khi nào bố mẹ thấy trẻ có hành vi chưa đúng, hãy mở sách ra, tìm đọc nội dung liên quan.
-                                    </p>                                    
-                                    Hành vi xã hội: 13 hành vi (hung hăng & bắt nạt; cáu giận & ăn vạ…)
-                                    Ăn, ngủ, vệ sinh: 9 hành vi (ăn vạ trong giờ ăn; ăn quá nhiều…)
-                                    Ngôn ngữ và gây ồn: 5 hành vi (gây ồn; nói bậy…)
-                                    Sự độc lập: 8 hành vi (phớt lờ yêu cầu; từ chối nhận giúp đỡ…)
-                                    Hoạt động: 2 (Nghiện xem tivi, điện thoại; leo trèo…)</p>
+                                   
                             </div>
                         </div>
                     </div>
@@ -240,6 +224,8 @@
     </footer>
 
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>

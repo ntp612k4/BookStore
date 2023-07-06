@@ -50,6 +50,7 @@ a:hover {
 .header__search {
     height: 50px;
     padding: 0;
+    width: 50% !important;
 }
 
 .header__user{
@@ -152,7 +153,9 @@ label {
 .accordion-button:focus {
     border: none !important;
 }
-
+#accordionExample{
+    width: 50% !important;
+}
 /*********** FOOTER ***********/
 footer {
     background-color: #16A085;
@@ -229,7 +232,6 @@ footer a:hover {
         width: 20%;
     }
     .header__user{
-       width: 20%;
        font-size: 14px;
     }
     .header__search{
@@ -287,6 +289,31 @@ footer a:hover {
     }
 }
 
-@media (max-width: 1199.98px) {}
 
-@media (max-width: 1399.98px) {}
+/* table */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .header__logo  img {
+        width: 235px;
+    }
+    #accordionExample {
+        width: 85% !important;
+    }
+}
+
+@media only screen and (max-width: 46.1875em){
+    .header__user a {
+        width: 105px;
+    }
+    .header__search {
+        margin-left: 12px;
+    }
+    .log {
+        width: 103px !important;
+    }
+    .header__user {
+        margin-left: -13px !important;
+    }
+    #accordionExample {
+        width: 75% !important;
+    }
+}

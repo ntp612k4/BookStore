@@ -288,6 +288,19 @@ footer a:hover {
     .header__search {
         margin-left: 20px;
     }
+    .wrap .content {
+        margin-left: -33px;
+        margin-right: -51px;
+    }
+    .wrap .menu {
+        margin-left: -60px;
+    }
+    .col-4 {
+        width: 100% !important;
+    }
+    .col-8 {
+        width: 100% !important;
+    }
 }
 
 /* -------- Reponsivve End------------ */

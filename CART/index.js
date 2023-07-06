@@ -34,6 +34,8 @@ $(document).ready(function () {
       }
     });
   
+
+    // select product and then display to checkout
     $(".content__body__products input[type='checkbox']").click(function (e) {
       let pricesTotal = 0;
       let checkedElement = $(
